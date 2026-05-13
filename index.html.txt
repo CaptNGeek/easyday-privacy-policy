@@ -1,0 +1,177 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — EasyDay</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7fb;
+      color: #1f2937;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    h1 {
+      color: #7c3aed;
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 32px;
+      color: #111827;
+    }
+
+    p, li {
+      color: #4b5563;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 32px 0;
+    }
+
+    a {
+      color: #7c3aed;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .updated {
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Politique de confidentialité — EasyDay</h1>
+
+    <p class="updated">Dernière mise à jour : Avril 2026</p>
+
+    <h2>1. Présentation</h2>
+
+    <p>
+      EasyDay est une application mobile de gestion de routines et de tâches du quotidien.
+    </p>
+
+    <p>
+      La protection de vos données personnelles est importante.
+      Cette politique explique quelles données sont utilisées par l’application et comment elles sont traitées.
+    </p>
+
+    <hr />
+
+    <h2>2. Données collectées</h2>
+
+    <p>
+      EasyDay ne crée actuellement aucun compte utilisateur et ne collecte pas de données personnelles sur des serveurs distants.
+    </p>
+
+    <p>
+      Les informations suivantes peuvent être stockées localement sur votre appareil :
+    </p>
+
+    <ul>
+      <li>tâches créées ;</li>
+      <li>routines personnalisées ;</li>
+      <li>préférences de langue ;</li>
+      <li>paramètres de notifications ;</li>
+      <li>heure des rappels quotidiens.</li>
+    </ul>
+
+    <p>
+      Ces données restent stockées uniquement sur votre téléphone.
+    </p>
+
+    <hr />
+
+    <h2>3. Notifications</h2>
+
+    <p>
+      EasyDay peut utiliser des notifications locales afin de vous rappeler vos tâches quotidiennes.
+    </p>
+
+    <p>
+      Ces notifications sont générées directement sur votre appareil et ne nécessitent aucun serveur externe.
+    </p>
+
+    <p>
+      Vous pouvez désactiver les notifications à tout moment dans les paramètres de l’application.
+    </p>
+
+    <hr />
+
+    <h2>4. Partage des données</h2>
+
+    <p>EasyDay :</p>
+
+    <ul>
+      <li>ne vend aucune donnée ;</li>
+      <li>ne partage aucune donnée personnelle ;</li>
+      <li>n’utilise actuellement aucun système publicitaire ;</li>
+      <li>n’utilise pas d’outil d’analyse comportementale (analytics).</li>
+    </ul>
+
+    <hr />
+
+    <h2>5. Sécurité</h2>
+
+    <p>
+      Les données étant stockées localement sur votre appareil, vous restez responsable de la sécurité et de l’accès à votre téléphone.
+    </p>
+
+    <hr />
+
+    <h2>6. Évolution de l’application</h2>
+
+    <p>
+      Certaines fonctionnalités futures (synchronisation multi-appareils, partage familial, sauvegarde cloud)
+      pourront nécessiter la création d’un compte utilisateur et le traitement de données supplémentaires.
+    </p>
+
+    <p>
+      Cette politique sera alors mise à jour.
+    </p>
+
+    <hr />
+
+    <h2>7. Contact</h2>
+
+    <p>
+      Pour toute question concernant cette politique de confidentialité :
+    </p>
+
+    <p>
+      <strong>EasyDay</strong><br />
+      Contact :
+      <a href="mailto:contact.easyday.app@gmail.com">
+        contact.easyday.app@gmail.com
+      </a>
+    </p>
+  </div>
+</body>
+</html>
+```
