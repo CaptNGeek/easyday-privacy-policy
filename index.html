@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Politique de confidentialité — EasyDay</title>
+
+  <title>EasyDay — Privacy Policy</title>
 
   <style>
     body {
@@ -61,11 +62,50 @@
       color: #6b7280;
       margin-bottom: 30px;
     }
+
+    .lang-switch {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: #ede9fe;
+      color: #5b21b6;
+      padding: 10px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .lang-btn.active {
+      background: #7c3aed;
+      color: white;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="showLang('fr')">FR</button>
+    <button class="lang-btn" onclick="showLang('en')">EN</button>
+  </div>
+
+  <!-- ================= FR ================= -->
+
+  <div id="fr" class="lang active">
+
     <h1>Politique de confidentialité — EasyDay</h1>
 
     <p class="updated">Dernière mise à jour : Mai 2026</p>
@@ -117,60 +157,125 @@
       Ces notifications sont générées directement sur votre appareil et ne nécessitent aucun serveur externe.
     </p>
 
-    <p>
-      Vous pouvez désactiver les notifications à tout moment dans les paramètres de l’application.
-    </p>
-
     <hr />
 
     <h2>4. Partage des données</h2>
 
-    <p>EasyDay :</p>
-
     <ul>
-      <li>ne vend aucune donnée ;</li>
-      <li>ne partage aucune donnée personnelle ;</li>
-      <li>n’utilise actuellement aucun système publicitaire ;</li>
-      <li>n’utilise pas d’outil d’analyse comportementale (analytics).</li>
+      <li>EasyDay ne vend aucune donnée ;</li>
+      <li>EasyDay ne partage aucune donnée personnelle ;</li>
+      <li>EasyDay n’utilise actuellement aucun système publicitaire ;</li>
+      <li>EasyDay n’utilise pas d’outil d’analyse comportementale.</li>
     </ul>
 
     <hr />
 
-    <h2>5. Sécurité</h2>
-
-    <p>
-      Les données étant stockées localement sur votre appareil, vous restez responsable de la sécurité et de l’accès à votre téléphone.
-    </p>
-
-    <hr />
-
-    <h2>6. Évolution de l’application</h2>
-
-    <p>
-      Certaines fonctionnalités futures (synchronisation multi-appareils, partage familial, sauvegarde cloud)
-      pourront nécessiter la création d’un compte utilisateur et le traitement de données supplémentaires.
-    </p>
-
-    <p>
-      Cette politique sera alors mise à jour.
-    </p>
-
-    <hr />
-
-    <h2>7. Contact</h2>
-
-    <p>
-      Pour toute question concernant cette politique de confidentialité :
-    </p>
+    <h2>5. Contact</h2>
 
     <p>
       <strong>EasyDay</strong><br />
-      Contact :
       <a href="mailto:easyday.app.contact@gmail.com">
         easyday.app.contact@gmail.com
       </a>
     </p>
   </div>
+
+  <!-- ================= EN ================= -->
+
+  <div id="en" class="lang">
+
+    <h1>Privacy Policy — EasyDay</h1>
+
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>1. Overview</h2>
+
+    <p>
+      EasyDay is a mobile application designed to help users manage daily tasks and routines.
+    </p>
+
+    <p>
+      Protecting your personal data is important.
+      This privacy policy explains what data is used by the application and how it is handled.
+    </p>
+
+    <hr />
+
+    <h2>2. Data Collection</h2>
+
+    <p>
+      EasyDay currently does not create user accounts and does not collect personal data on remote servers.
+    </p>
+
+    <p>
+      The following information may be stored locally on your device:
+    </p>
+
+    <ul>
+      <li>created tasks;</li>
+      <li>custom routines;</li>
+      <li>language preferences;</li>
+      <li>notification settings;</li>
+      <li>daily reminder times.</li>
+    </ul>
+
+    <p>
+      This data remains stored only on your device.
+    </p>
+
+    <hr />
+
+    <h2>3. Notifications</h2>
+
+    <p>
+      EasyDay may use local notifications to remind you about your daily tasks.
+    </p>
+
+    <p>
+      These notifications are generated directly on your device and do not require external servers.
+    </p>
+
+    <hr />
+
+    <h2>4. Data Sharing</h2>
+
+    <ul>
+      <li>EasyDay does not sell data;</li>
+      <li>EasyDay does not share personal data;</li>
+      <li>EasyDay currently does not use advertising systems;</li>
+      <li>EasyDay does not use analytics or behavioral tracking tools.</li>
+    </ul>
+
+    <hr />
+
+    <h2>5. Contact</h2>
+
+    <p>
+      <strong>EasyDay</strong><br />
+      <a href="mailto:easyday.app.contact@gmail.com">
+        easyday.app.contact@gmail.com
+      </a>
+    </p>
+  </div>
+
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.lang').forEach(el => {
+      el.classList.remove('active');
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(el => {
+      el.classList.remove('active');
+    });
+
+    document.getElementById(lang).classList.add('active');
+
+    event.target.classList.add('active');
+
+    document.documentElement.lang = lang;
+  }
+</script>
 </body>
 </html>
-```
