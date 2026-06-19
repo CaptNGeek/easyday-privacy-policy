@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EasyDay — Account Deletion</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7fb;
+            color: #1f2937;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+
+        h1 {
+            color: #7c3aed;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 32px;
+            color: #111827;
+        }
+
+        p, li {
+            color: #4b5563;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 32px 0;
+        }
+
+        a {
+            color: #7c3aed;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .updated {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .lang-btn {
+            border: none;
+            background: #ede9fe;
+            color: #5b21b6;
+            padding: 10px 14px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lang-btn.active {
+            background: #7c3aed;
+            color: white;
+        }
+
+        .lang {
+            display: none;
+        }
+
+        .lang.active {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="showLang('fr')">FR</button>
+        <button class="lang-btn" onclick="showLang('en')">EN</button>
+    </div>
+
+    <!-- ================= FR ================= -->
+
+    <div id="fr" class="lang active">
+
+        ```
+        <h1>Suppression du compte — EasyDay</h1>
+
+        <p class="updated">Dernière mise à jour : Juin 2026</p>
+
+        <h2>Suppression du compte</h2>
+
+        <p>
+            Les utilisateurs disposant d'un compte EasyDay peuvent supprimer leur compte directement depuis l'application.
+        </p>
+
+        <p>
+            Paramètres → Compte → Supprimer mon compte
+        </p>
+
+        <hr />
+
+        <h2>Données supprimées</h2>
+
+        <p>
+            La suppression du compte entraîne la suppression des données associées au compte, notamment :
+        </p>
+
+        <ul>
+            <li>profil utilisateur ;</li>
+            <li>adresse e-mail associée au compte ;</li>
+            <li>listes partagées créées par l'utilisateur ;</li>
+            <li>tâches associées à ces listes ;</li>
+            <li>informations de participation aux listes partagées.</li>
+        </ul>
+
+        <hr />
+
+        <h2>Besoin d'aide ?</h2>
+
+        <p>
+            Si vous ne pouvez plus accéder à votre compte ou rencontrez un problème lors de la suppression, vous pouvez nous contacter :
+        </p>
+
+        <p>
+            <a href="mailto:easyday.app.contact@gmail.com">
+                easyday.app.contact@gmail.com
+            </a>
+        </p>
+        ```
+
+    </div>
+
+    <!-- ================= EN ================= -->
+
+    <div id="en" class="lang">
+
+        ```
+        <h1>Account Deletion — EasyDay</h1>
+
+        <p class="updated">Last updated: June 2026</p>
+
+        <h2>Delete your account</h2>
+
+        <p>
+            EasyDay users can delete their account directly from within the application.
+        </p>
+
+        <p>
+            Settings → Account → Delete my account
+        </p>
+
+        <hr />
+
+        <h2>Data deleted</h2>
+
+        <p>
+            Deleting an account removes the data associated with that account, including:
+        </p>
+
+        <ul>
+            <li>user profile;</li>
+            <li>account email address;</li>
+            <li>shared lists created by the user;</li>
+            <li>tasks associated with those lists;</li>
+            <li>shared list membership information.</li>
+        </ul>
+
+        <hr />
+
+        <h2>Need help?</h2>
+
+        <p>
+            If you can no longer access your account or encounter an issue while deleting it, please contact:
+        </p>
+
+        <p>
+            <a href="mailto:easyday.app.contact@gmail.com">
+                easyday.app.contact@gmail.com
+            </a>
+        </p>
+        ```
+
+    </div>
+
+</div>
+
+<script>
+    function showLang(lang) {
+        document.querySelectorAll('.lang').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        document.querySelectorAll('.lang-btn').forEach(el => {
+            el.classList.remove('active');
+        });
+
+        document.getElementById(lang).classList.add('active');
+
+        event.target.classList.add('active');
+
+        document.documentElement.lang = lang;
+    }
+</script>
+
+</body>
+</html>
