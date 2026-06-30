@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyDay — Centre d’aide</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#f7f7fb; color:#1f2937; margin:0; padding:40px 20px; line-height:1.7; }
+        .container { max-width:860px; margin:auto; background:#fff; padding:40px; border-radius:20px; box-shadow:0 8px 30px rgba(0,0,0,.06); }
+        h1 { color:#7c3aed; margin-top:0; }
+        h2 { margin-top:32px; color:#111827; }
+        h3 { margin-top:20px; color:#374151; }
+        p, li { color:#4b5563; }
+        ul, ol { padding-left:22px; }
+        hr { border:none; border-top:1px solid #e5e7eb; margin:32px 0; }
+        .updated { color:#6b7280; margin-bottom:30px; }
+        .note { background:#f5f3ff; border-left:4px solid #7c3aed; padding:12px 16px; border-radius:12px; color:#4b5563; }
+        .lang-switch { display:flex; gap:10px; margin-bottom:30px; }
+        .lang-btn { border:none; background:#ede9fe; color:#5b21b6; padding:10px 14px; border-radius:999px; cursor:pointer; font-weight:bold; }
+        .lang-btn.active { background:#7c3aed; color:white; }
+        .lang { display:none; }
+        .lang.active { display:block; }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="showLang('fr', event)">FR</button>
+        <button class="lang-btn" onclick="showLang('en', event)">EN</button>
+    </div>
+
+    <div id="fr" class="lang active">
+        <h1>EasyDay — Centre d’aide</h1>
+        <p class="updated">Dernière mise à jour : Juin 2026</p>
+
+        <h2>🌟 Bienvenue sur EasyDay</h2>
+        <p>EasyDay vous aide à organiser simplement votre quotidien grâce à des tâches, des listes, des routines et des rappels, tout en restant rapide et facile à utiliser.</p>
+
+        <hr />
+
+        <h2>📋 Les tâches</h2>
+        <p>Une tâche représente une action à réaliser.</p>
+        <ul>
+            <li>créer une tâche ;</li>
+            <li>la modifier ;</li>
+            <li>la marquer comme terminée ;</li>
+            <li>la supprimer ;</li>
+            <li>lui ajouter un rappel ;</li>
+            <li>la marquer <strong>À ne pas oublier</strong>.</li>
+        </ul>
+
+        <h2>⭐ À ne pas oublier</h2>
+        <p>Les tâches importantes peuvent être marquées <strong>À ne pas oublier</strong>. Elles apparaissent automatiquement en haut de leur liste afin de rester visibles.</p>
+
+        <h2>🔔 Les rappels</h2>
+        <p>Vous pouvez ajouter un rappel à une tâche. Le rappel déclenche une notification locale et reste enregistré sur votre appareil.</p>
+        <p class="note">Les rappels sont personnels. Ils ne sont pas partagés avec les autres membres d’une liste.</p>
+
+        <hr />
+
+        <h2>📁 Les listes</h2>
+        <p>Les listes permettent d’organiser vos tâches par thème : courses, maison, travail, vacances, etc.</p>
+        <p>EasyDay démarre avec une première liste appelée <strong>Ma liste</strong>.</p>
+        <p>Vous pouvez créer plusieurs listes pour organiser vos tâches.</p>
+
+        <h2>✏️ Gérer une liste</h2>
+        <p>Maintenez votre doigt appuyé sur une liste pour afficher ses actions.</p>
+        <ul>
+            <li>Renommer ;</li>
+            <li>Partager ;</li>
+            <li>Supprimer.</li>
+        </ul>
+        <p class="note">Certaines actions peuvent varier selon le type de liste. La liste principale <strong>Ma liste</strong> ne peut pas être partagée.</p>
+
+        <hr />
+
+        <h2>🔄 Les routines</h2>
+        <p>Les routines sont des modèles de tâches. Touchez simplement une routine pour ajouter toutes ses tâches à la liste actuellement sélectionnée.</p>
+        <p>Les routines ne modifient jamais les tâches déjà existantes.</p>
+
+        <h2>🤝 Les listes partagées</h2>
+        <p>Vous pouvez partager une liste avec votre famille, vos amis ou vos collègues.</p>
+        <ol>
+            <li>Maintenez une liste appuyée ;</li>
+            <li>Choisissez <strong>Partager</strong> ;</li>
+            <li>Envoyez le code de partage.</li>
+        </ol>
+        <p>Les autres utilisateurs peuvent rejoindre la liste grâce à ce code.</p>
+        <p class="note">Un compte EasyDay gratuit est nécessaire pour partager ou rejoindre une liste partagée.</p>
+
+        <h2>☁️ Synchronisation</h2>
+        <p>Les listes partagées sont automatiquement synchronisées. Les membres voient les nouvelles tâches, les modifications, les suppressions et les tâches terminées.</p>
+        <p>Les rappels restent personnels et ne sont jamais synchronisés.</p>
+
+        <h2>📶 Utilisation hors connexion</h2>
+        <p>EasyDay fonctionne sans connexion Internet pour toutes vos listes locales. Les listes partagées se synchronisent automatiquement dès que votre appareil retrouve une connexion.</p>
+
+        <hr />
+
+        <h2>🌍 Langues et thèmes</h2>
+        <p>Vous pouvez personnaliser EasyDay en modifiant la langue et le thème de l’application.</p>
+
+        <h2>👤 Compte EasyDay</h2>
+        <p>Créer un compte est facultatif. Vous avez uniquement besoin d’un compte si vous souhaitez utiliser les listes partagées.</p>
+
+        <h2>🗑️ Compte et données</h2>
+        <h3>Réinitialiser les données locales</h3>
+        <p>Supprime uniquement les données enregistrées sur cet appareil : tâches, routines et listes locales.</p>
+
+        <h3>Supprimer son compte</h3>
+        <p>Supprime définitivement votre compte EasyDay, votre profil, les listes partagées dont vous êtes propriétaire et les données synchronisées associées.</p>
+
+        <h2>🔒 Confidentialité</h2>
+        <p>Les listes locales restent uniquement sur votre appareil. Les listes partagées sont stockées de manière sécurisée afin de permettre leur synchronisation entre les membres.</p>
+        <p>EasyDay ne vend aucune donnée personnelle et n’utilise actuellement aucun système publicitaire.</p>
+
+        <hr />
+
+        <h2>💡 Astuces</h2>
+        <ul>
+            <li>Touchez une routine pour ajouter ses tâches à la liste active.</li>
+            <li>Maintenez une liste appuyée pour la gérer.</li>
+            <li>Les tâches <strong>À ne pas oublier</strong> restent en haut de leur liste.</li>
+            <li>Les rappels sont personnels et restent sur votre appareil.</li>
+            <li>Les listes partagées se synchronisent automatiquement.</li>
+        </ul>
+
+        <h2>❓ Questions fréquentes</h2>
+        <h3>Puis-je utiliser EasyDay sans Internet ?</h3>
+        <p>Oui. Toutes vos listes locales restent accessibles.</p>
+
+        <h3>Pourquoi créer un compte ?</h3>
+        <p>Uniquement pour partager des listes avec d’autres utilisateurs.</p>
+
+        <h3>Les rappels sont-ils partagés ?</h3>
+        <p>Non. Chaque utilisateur gère ses propres rappels.</p>
+
+        <h3>Puis-je supprimer mon compte ?</h3>
+        <p>Oui. Depuis <strong>Paramètres → Compte → Supprimer mon compte</strong>.</p>
+    </div>
+
+    <div id="en" class="lang">
+        <h1>EasyDay — Help Center</h1>
+        <p class="updated">Last updated: June 2026</p>
+
+        <h2>🌟 Welcome to EasyDay</h2>
+        <p>EasyDay helps you organize your tasks, lists, routines, and reminders in a simple, fast, and easy-to-use way.</p>
+
+        <hr />
+
+        <h2>📋 Tasks</h2>
+        <p>A task represents something you want to do.</p>
+        <ul>
+            <li>create a task;</li>
+            <li>edit it;</li>
+            <li>mark it as completed;</li>
+            <li>delete it;</li>
+            <li>add a reminder;</li>
+            <li>mark it as <strong>Don’t forget</strong>.</li>
+        </ul>
+
+        <h2>⭐ Don’t forget</h2>
+        <p>Important tasks can be marked as <strong>Don’t forget</strong>. They automatically appear at the top of their list so they stay visible.</p>
+
+        <h2>🔔 Reminders</h2>
+        <p>You can add a reminder to a task. The reminder triggers a local notification and stays on your device.</p>
+        <p class="note">Reminders are personal. They are not shared with other members of a list.</p>
+
+        <hr />
+
+        <h2>📁 Lists</h2>
+        <p>Lists help you organize tasks by topic: groceries, home, work, vacation, and more.</p>
+        <p>EasyDay starts with a first list called <strong>My List</strong>.</p>
+        <p>You can create several lists to organize your tasks.</p>
+
+        <h2>✏️ Manage a list</h2>
+        <p>Long press a list to show its actions.</p>
+        <ul>
+            <li>Rename;</li>
+            <li>Share;</li>
+            <li>Delete.</li>
+        </ul>
+        <p class="note">Some actions may vary depending on the list type. The main list <strong>My List</strong> cannot be shared.</p>
+
+        <hr />
+
+        <h2>🔄 Routines</h2>
+        <p>Routines are task templates. Tap a routine to add all its tasks to the currently selected list.</p>
+        <p>Routines never modify existing tasks.</p>
+
+        <h2>🤝 Shared lists</h2>
+        <p>You can share a list with family, friends, or colleagues.</p>
+        <ol>
+            <li>Long press a list;</li>
+            <li>Choose <strong>Share</strong>;</li>
+            <li>Send the share code.</li>
+        </ol>
+        <p>Other users can join the list using this code.</p>
+        <p class="note">A free EasyDay account is required to share or join a shared list.</p>
+
+        <h2>☁️ Sync</h2>
+        <p>Shared lists are automatically synchronized. Members can see new tasks, edits, deleted tasks, and completed tasks.</p>
+        <p>Reminders stay personal and are never synchronized.</p>
+
+        <h2>📶 Offline use</h2>
+        <p>EasyDay works without an internet connection for all local lists. Shared lists sync automatically when your device reconnects.</p>
+
+        <hr />
+
+        <h2>🌍 Languages and themes</h2>
+        <p>You can personalize EasyDay by changing the app language and theme.</p>
+
+        <h2>👤 EasyDay account</h2>
+        <p>Creating an account is optional. You only need an account if you want to use shared lists.</p>
+
+        <h2>🗑️ Account and data</h2>
+        <h3>Reset local data</h3>
+        <p>Deletes only the data stored on this device: tasks, routines, and local lists.</p>
+
+        <h3>Delete your account</h3>
+        <p>Permanently deletes your EasyDay account, profile, shared lists you own, and associated synchronized data.</p>
+
+        <h2>🔒 Privacy</h2>
+        <p>Local lists stay only on your device. Shared lists are securely stored to allow synchronization between members.</p>
+        <p>EasyDay does not sell personal data and currently does not use advertising.</p>
+
+        <hr />
+
+        <h2>💡 Tips</h2>
+        <ul>
+            <li>Tap a routine to add its tasks to the active list.</li>
+            <li>Long press a list to manage it.</li>
+            <li><strong>Don’t forget</strong> tasks stay at the top of their list.</li>
+            <li>Reminders are personal and stay on your device.</li>
+            <li>Shared lists sync automatically.</li>
+        </ul>
+
+        <h2>❓ FAQ</h2>
+        <h3>Can I use EasyDay without internet?</h3>
+        <p>Yes. All your local lists remain available.</p>
+
+        <h3>Why create an account?</h3>
+        <p>Only to share lists with other users.</p>
+
+        <h3>Are reminders shared?</h3>
+        <p>No. Each user manages their own reminders.</p>
+
+        <h3>Can I delete my account?</h3>
+        <p>Yes. From <strong>Settings → Account → Delete my account</strong>.</p>
+    </div>
+</div>
+
+<script>
+    function showLang(lang, event) {
+        document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+        event.target.classList.add('active');
+        document.documentElement.lang = lang;
+    }
+</script>
+</body>
+</html>
