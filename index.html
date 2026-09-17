@@ -98,17 +98,17 @@
 <div class="container">
 
   <div class="lang-switch">
-    <button class="lang-btn active" onclick="showLang('fr')">FR</button>
-    <button class="lang-btn" onclick="showLang('en')">EN</button>
+    <button class="lang-btn active" onclick="showLang('fr', this)">FR</button>
+    <button class="lang-btn" onclick="showLang('en', this)">EN</button>
   </div>
 
   <!-- ================= FR ================= -->
 
   <div id="fr" class="lang active">
 
-    <h1>Politique de confidentialité — EasyDay</h1>
+    <h1>EasyDay — Politique de confidentialité</h1>
 
-    <p class="updated">Dernière mise à jour : Juin 2026</p>
+    <p class="updated">Dernière mise à jour : Septembre 2026</p>
 
     <h2>1. Présentation</h2>
 
@@ -137,13 +137,14 @@
       <li>tâches créées ;</li>
       <li>routines personnalisées ;</li>
       <li>listes personnelles ;</li>
-      <li>préférences de langue ;</li>
+      <li>préférences de langue et de thème ;</li>
       <li>paramètres de notifications ;</li>
       <li>heure des rappels quotidiens.</li>
     </ul>
 
     <p>
-      Lorsque vous utilisez les fonctionnalités de partage, certaines données sont stockées sur des serveurs sécurisés exploités via Supabase :
+      Lorsque vous créez un compte ou utilisez les fonctionnalités en ligne,
+      certaines données peuvent être stockées via Supabase :
     </p>
 
     <ul>
@@ -151,11 +152,13 @@
       <li>nom d'affichage (pseudo) ;</li>
       <li>listes partagées ;</li>
       <li>tâches associées aux listes partagées ;</li>
-      <li>informations de participation aux listes partagées.</li>
+      <li>informations de participation aux listes partagées ;</li>
+      <li>informations relatives au statut de votre abonnement Premium.</li>
     </ul>
 
     <p>
-      Ces données sont utilisées uniquement pour permettre la synchronisation et le partage des listes entre les utilisateurs.
+      Ces données sont utilisées pour fournir les fonctionnalités associées au compte,
+      synchroniser les listes partagées et déterminer l'accès aux fonctionnalités Premium.
     </p>
 
     <hr />
@@ -172,39 +175,85 @@
 
     <hr />
 
-    <h2>4. Hébergement des données</h2>
+    <h2>4. Hébergement et services tiers</h2>
 
     <p>
-      Les fonctionnalités de partage utilisent les services de Supabase pour stocker et synchroniser les données entre les utilisateurs.
+      EasyDay utilise Supabase pour certaines fonctionnalités nécessitant un compte,
+      notamment l'authentification, le partage de listes et la gestion du statut Premium.
     </p>
 
     <p>
-      Les données sont hébergées sur des infrastructures sécurisées et utilisées uniquement dans le cadre du fonctionnement de l'application.
+      Pour la gestion des abonnements EasyDay Premium, l'application utilise RevenueCat.
+      RevenueCat permet de gérer et de vérifier les achats effectués via l'Apple App Store
+      et Google Play.
     </p>
+
+    <p>
+      Les paiements sont traités directement par Apple ou Google selon la plateforme utilisée.
+      EasyDay ne collecte ni ne stocke les informations de carte bancaire de l'utilisateur.
+    </p>
+
     <hr />
-    <h2>5. Partage des données</h2>
+
+    <h2>5. Abonnements EasyDay Premium</h2>
+
+    <p>
+      EasyDay propose des abonnements Premium mensuels et annuels souscrits via
+      l'Apple App Store ou Google Play.
+    </p>
+
+    <p>
+      Les informations nécessaires à la validation et à la gestion de l'abonnement
+      peuvent être traitées par Apple, Google, RevenueCat et EasyDay afin de déterminer
+      si les fonctionnalités Premium doivent être activées pour le compte concerné.
+    </p>
+
+    <p>
+      EasyDay conserve notamment le statut de l'abonnement, le type d'offre,
+      le produit concerné et, lorsque cela est nécessaire, les informations relatives
+      à sa période de validité.
+    </p>
+
+    <p>
+      La gestion, le renouvellement et l'annulation de l'abonnement sont effectués
+      depuis les paramètres du compte Apple App Store ou Google Play de l'utilisateur.
+    </p>
+
+    <hr />
+
+    <h2>6. Partage des données</h2>
 
     <ul>
       <li>EasyDay ne vend aucune donnée personnelle ;</li>
-      <li>EasyDay ne partage aucune donnée à des fins publicitaires ;</li>
+      <li>EasyDay ne partage aucune donnée personnelle à des fins publicitaires ;</li>
       <li>EasyDay n'utilise actuellement aucun système publicitaire ;</li>
       <li>EasyDay n'utilise pas d'outil d'analyse comportementale ;</li>
-      <li>Les données hébergées sont utilisées uniquement pour permettre le partage et la synchronisation des listes.</li>
+      <li>certaines données peuvent être traitées par les prestataires nécessaires au fonctionnement du service, notamment Supabase et RevenueCat ;</li>
+      <li>les achats et abonnements sont également soumis aux traitements réalisés par Apple ou Google selon la plateforme utilisée.</li>
     </ul>
 
     <hr />
 
-    <h2>6. Suppression des données</h2>
+    <h2>7. Suppression des données</h2>
 
     <p>
       Vous pouvez supprimer les données stockées localement depuis les paramètres de l'application.
     </p>
 
     <p>
-      Les utilisateurs disposant d'un compte peuvent également supprimer leur compte et les données associées directement depuis l'application.
+      Les utilisateurs disposant d'un compte peuvent également supprimer leur compte
+      et les données associées directement depuis l'application.
     </p>
+
+    <p>
+      La suppression d'un compte EasyDay n'entraîne pas nécessairement l'annulation
+      d'un abonnement souscrit auprès d'Apple ou Google. L'abonnement doit être géré
+      ou annulé depuis le compte de la plateforme concernée.
+    </p>
+
     <hr />
-    <h2>7. Contact</h2>
+
+    <h2>8. Contact</h2>
 
     <p>
       <strong>EasyDay</strong><br />
@@ -218,9 +267,9 @@
 
   <div id="en" class="lang">
 
-    <h1>Privacy Policy — EasyDay</h1>
+    <h1>EasyDay — Privacy Policy</h1>
 
-    <p class="updated">Last updated: June 2026</p>
+    <p class="updated">Last updated: September 2026</p>
 
     <h2>1. Overview</h2>
 
@@ -249,13 +298,14 @@
       <li>created tasks;</li>
       <li>custom routines;</li>
       <li>personal lists;</li>
-      <li>language preferences;</li>
+      <li>language and theme preferences;</li>
       <li>notification settings;</li>
       <li>daily reminder times.</li>
     </ul>
 
     <p>
-      When using sharing features, some information is stored on secure servers operated through Supabase:
+      When you create an account or use online features, some information may be
+      stored through Supabase:
     </p>
 
     <ul>
@@ -263,11 +313,13 @@
       <li>display name (nickname);</li>
       <li>shared lists;</li>
       <li>tasks associated with shared lists;</li>
-      <li>shared list membership information.</li>
+      <li>shared list membership information;</li>
+      <li>information related to your Premium subscription status.</li>
     </ul>
 
     <p>
-      This data is used solely to provide synchronization and list sharing features.
+      This data is used to provide account-related features, synchronize shared lists,
+      and determine access to Premium features.
     </p>
 
     <hr />
@@ -284,43 +336,84 @@
 
     <hr />
 
-    <h2>4. Data Hosting</h2>
+    <h2>4. Data Hosting and Third-Party Services</h2>
 
     <p>
-      Sharing features rely on Supabase services to store and synchronize data between users.
+      EasyDay uses Supabase for certain account-based features, including
+      authentication, shared lists and Premium status management.
     </p>
 
     <p>
-      Data is hosted on secure infrastructure and used solely for the operation of the application.
+      EasyDay uses RevenueCat to manage EasyDay Premium subscriptions.
+      RevenueCat helps manage and verify purchases made through the Apple App Store
+      and Google Play.
+    </p>
+
+    <p>
+      Payments are processed directly by Apple or Google depending on the platform.
+      EasyDay does not collect or store users' payment card information.
     </p>
 
     <hr />
 
-    <h2>5. Data Sharing</h2>
+    <h2>5. EasyDay Premium Subscriptions</h2>
+
+    <p>
+      EasyDay offers monthly and yearly Premium subscriptions purchased through
+      the Apple App Store or Google Play.
+    </p>
+
+    <p>
+      Information required to validate and manage subscriptions may be processed
+      by Apple, Google, RevenueCat and EasyDay in order to determine whether
+      Premium features should be enabled for the relevant account.
+    </p>
+
+    <p>
+      EasyDay may store information including the subscription status, plan,
+      relevant product and, where necessary, information about its validity period.
+    </p>
+
+    <p>
+      Subscription management, renewal and cancellation are handled through
+      the user's Apple App Store or Google Play account settings.
+    </p>
+
+    <hr />
+
+    <h2>6. Data Sharing</h2>
 
     <ul>
       <li>EasyDay does not sell personal data;</li>
       <li>EasyDay does not share personal data for advertising purposes;</li>
       <li>EasyDay currently does not use advertising systems;</li>
-      <li>EasyDay does not use analytics or behavioral tracking tools;</li>
-      <li>Hosted data is used only to provide list sharing and synchronization features.</li>
+      <li>EasyDay does not use behavioral analytics or tracking tools;</li>
+      <li>some data may be processed by service providers required to operate EasyDay, including Supabase and RevenueCat;</li>
+      <li>purchases and subscriptions are also subject to processing by Apple or Google depending on the platform used.</li>
     </ul>
 
     <hr />
 
-    <h2>6. Data Deletion</h2>
+    <h2>7. Data Deletion</h2>
 
     <p>
       You can delete locally stored data directly from the application settings.
     </p>
 
     <p>
-      Users with an account can also delete their account and associated data directly from the application.
+      Users with an account can also delete their account and associated data
+      directly from the application.
+    </p>
+
+    <p>
+      Deleting an EasyDay account does not necessarily cancel a subscription
+      purchased through Apple or Google. The subscription must be managed or
+      cancelled through the relevant platform account.
     </p>
 
     <hr />
 
-    <h2>7. Contact</h2>
+    <h2>8. Contact</h2>
 
     <p>
       <strong>EasyDay</strong><br />
@@ -333,7 +426,7 @@
 </div>
 
 <script>
-  function showLang(lang) {
+  function showLang(lang, button) {
     document.querySelectorAll('.lang').forEach(el => {
       el.classList.remove('active');
     });
@@ -343,8 +436,7 @@
     });
 
     document.getElementById(lang).classList.add('active');
-
-    event.target.classList.add('active');
+    button.classList.add('active');
 
     document.documentElement.lang = lang;
   }
